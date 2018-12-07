@@ -2,7 +2,7 @@
 
 :: 复制必要的dll
 md C:\Users\li\.virtualenvs\package_project-kQjJIRGx\DLLS\
-copy C:\Users\li\Documents\01_Code\09_Gitlab\python_package\package\windows\source\sqlite3.dll C:\Users\li\.virtualenvs\package_project-kQjJIRGx\DLLS\sqlite3.dll
+copy C:\Users\li\Documents\01_Code\02_Python\python_package\package\windows\sqlite3.dll C:\Users\li\.virtualenvs\package_project-kQjJIRGx\DLLS\sqlite3.dll
 
 
 :: 打包
