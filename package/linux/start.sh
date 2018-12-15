@@ -13,7 +13,7 @@ function findpid()
 function start()
 {
 	echo "启动服务"
-	nohup ./server &
+	nohup ./main &
 }
 
 echo "-------------开始启动服务---------------------"

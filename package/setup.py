@@ -81,7 +81,7 @@ class LinuxPackage(Package):
             'include_files': ['../project/config.py', 'linux/start.sh', 'linux/stop.sh', 'linux/test.sh']}
 
         self.executables = [
-            Executable('../project/server.py')
+            Executable('../project/main.py')
         ]
 
     pass
@@ -105,7 +105,7 @@ class WindowsPackage(Package):
             'include_files': ['../project/config.py']}
 
         self.executables = [
-            Executable('../project/server.py')
+            Executable('../project/main.py')
         ]
 
     pass
