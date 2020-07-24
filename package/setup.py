@@ -1,12 +1,12 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-@Comment    : 
-@Time       : 2018/8/6 16:14
-@Author     : libaojie
-@File       : setup_cxfreeze.py
-@Software   : PyCharm
-"""
+# @Time       : 2018/11/9 10:15
+# @Author     : xnchall
+# @Description:
+# @File       :
+# @Software   : PyCharm
+
+import opcode
 import platform
 import sys
 
@@ -33,6 +33,12 @@ class Package(object):
         except NameError:
             approot = os.path.dirname(os.path.abspath(sys.argv[0]))
         sys.path.append(os.path.split(approot)[0])
+
+        print("----------------------------")
+        print("输出参数：")
+        print(f"self.python_path:【{self.python_path}】")
+        print(f"approot:【{approot}】")
+        print("----------------------------")
 
     def run(self):
         """
@@ -75,13 +81,35 @@ class LinuxPackage(Package):
         """
         os.environ['TCL_LIBRARY'] = os.path.join(self.python_path, 'tcl', 'tcl8.6')
         os.environ['TK_LIBRARY'] = os.path.join(self.python_path, 'tcl', 'tk8.6')
+        distutils_path = os.path.join(os.path.dirname(opcode.__file__), 'distutils')
 
         self.build_exe_options = {
-            'packages': ['asyncio'],
-            'include_files': ['../project/config.py', 'linux/start.sh', 'linux/stop.sh', 'linux/test.sh']}
+            'packages': [
+                'pandas',
+                'numpy',
+                'asyncio',
+                'gunicorn.glogging',
+                'gunicorn.workers.sync',
+                'gunicorn.workers.ggevent',
+                'gevent._abstract_linkable',
+                'gevent.time',
+                'geventwebsocket.gunicorn.workers',
+                'engineio',
+                'socketio',
+                'flask_socketio',
+                'engineio.async_drivers.threading'
+            ],
+            'include_files': [(distutils_path, 'lib/distutils'),
+                              'linux/start.sh',
+                              'linux/stop.sh',
+                              '../project/config.conf',
+                              'linux/test.sh'],
+            'includes': "idna.idnadata",
+            'excludes': ['distutils']
+        }
 
         self.executables = [
-            Executable('../project/main.py')
+            Executable('../main.py')
         ]
 
     pass
@@ -91,6 +119,7 @@ class WindowsPackage(Package):
     """
     Windows打包
     """
+
     def _init_data(self):
         """
         初始化数据
@@ -99,10 +128,17 @@ class WindowsPackage(Package):
         # 设置环境变量
         os.environ['TCL_LIBRARY'] = os.path.join(self.python_path, 'tcl', 'tcl8.6')
         os.environ['TK_LIBRARY'] = os.path.join(self.python_path, 'tcl', 'tk8.6')
-
+        distutils_path = os.path.join(os.path.dirname(opcode.__file__), 'distutils')
         self.build_exe_options = {
-            'packages': ['asyncio'],
-            'include_files': ['../project/config.py']}
+            'packages': ['pandas', 'numpy', 'asyncio'],
+            'include_files': [(distutils_path, 'libs/distutils'),
+                              'linux/start.sh',
+                              'linux/stop.sh',
+                              'linux/test.sh',
+                              '../project/config.conf'],
+            'includes': "idna.idnadata",
+            'excludes': ['distutils']
+        }
 
         self.executables = [
             Executable('../project/main.py')
@@ -114,7 +150,7 @@ class WindowsPackage(Package):
 # 运行打包
 package = None
 if 'Windows' in platform.platform():
-     package = WindowsPackage()
+    package = WindowsPackage()
 elif 'Linux' in platform.platform():
     package = LinuxPackage()
 
