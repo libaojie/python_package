@@ -18,6 +18,7 @@
 - [01_package](./python_template/01_package/README.md) 单纯含打包的项目
 - [02_package](./python_template/02_package/README.md) 含自定义组件的项目
 - [03_flask_jinja](./python_template/03_flask_jinja/README.md) flask前后端均有的项目
+- [04_flask](./python_template/04_flask/README.md) flask后端对接SpringCLoud socket docker均有的项目
     
 ## 推荐环境
 
