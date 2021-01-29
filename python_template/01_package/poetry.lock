@@ -1,0 +1,26 @@
+[[package]]
+category = "main"
+description = "create standalone executables from Python scripts"
+name = "cx-freeze"
+optional = false
+python-versions = "*"
+version = "5.1.1"
+
+[package.source]
+reference = "douban"
+url = "https://pypi.doubanio.com/simple"
+
+[metadata]
+content-hash = "69684953429fd9ade938486f08630dd675aeb9b95d44635a240edab66cb8e484"
+python-versions = "^3.6"
+
+[metadata.files]
+cx-freeze = [
+    {file = "cx_Freeze-5.1.1-cp27-cp27m-win32.whl", hash = "sha256:076a75a23bea1566314e35d22491adc948352d7e9d5d9bfc4c4f5d11305cc6ff"},
+    {file = "cx_Freeze-5.1.1-cp27-cp27m-win_amd64.whl", hash = "sha256:9aee968da6f4c765237d912b4690ea801b96909f00442298646736ca1e4a3fa3"},
+    {file = "cx_Freeze-5.1.1-cp35-cp35m-win32.whl", hash = "sha256:8b1ed8f04bd761c0c8a8864485c50201e952e746925d7f1ab614dd69045a509b"},
+    {file = "cx_Freeze-5.1.1-cp35-cp35m-win_amd64.whl", hash = "sha256:19ef088481c55cd90c8d1c0a1c771dcd0f9583cba81443de0f1f3fa18a4d84f0"},
+    {file = "cx_Freeze-5.1.1-cp36-cp36m-win32.whl", hash = "sha256:2cda34f73052c18489e97d563e67d08762cc0ba8114e0ecac08124f9c252c69f"},
+    {file = "cx_Freeze-5.1.1-cp36-cp36m-win_amd64.whl", hash = "sha256:fb8c12f5814c1ce6383b86617ca6b2b83a169f9251f4e308e4f8d94b0c703f59"},
+    {file = "cx_Freeze-5.1.1.tar.gz", hash = "sha256:2eadddde670f5c5f6cf88638a0ac4e5d5fe181292a31063275fa56c7bf22426b"},
+]

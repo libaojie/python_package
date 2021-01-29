@@ -14,7 +14,8 @@ requests = "2.18.4"
 flask-restful = "0.3.6"
 flask-sqlalchemy = "2.3.0"
 flask-cors = "3.0.4"
-lbj-common = {path = "../lbj_common/dist/lbj_common-0.3-py3-none-any.whl"}
+
+lbj-common = {path = "../lbj_common/dist/lbj_common-1.0-py3-none-any.whl"}
 lbj-db = {path = "../lbj_db/dist/lbj_db-1.0-py3-none-any.whl"}
 
 
