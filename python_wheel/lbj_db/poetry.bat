@@ -15,4 +15,6 @@ echo ------------------------------------------------
 python -m poetry show --tree
 echo ------------------------------------------------
 
+python -m poetry env info -p | clip
+
 pause

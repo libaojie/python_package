@@ -1,0 +1,100 @@
+[[package]]
+category = "main"
+description = "基础工具包"
+name = "lbj-common"
+optional = false
+python-versions = "*"
+version = "1.0"
+
+[package.dependencies]
+setuptools = "19.2.0"
+wheel = "0.34.2"
+
+[package.source]
+reference = ""
+type = "file"
+url = "../lbj_common/dist/lbj_common-1.0-py3-none-any.whl"
+
+[[package]]
+category = "main"
+description = "A built-package format for Python"
+name = "wheel"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+version = "0.34.2"
+
+[package.extras]
+test = ["pytest (>=3.0.0)", "pytest-cov"]
+
+[package.source]
+reference = "douban"
+url = "https://pypi.doubanio.com/simple"
+
+[[package]]
+category = "main"
+description = "Library for developers to extract data from Microsoft Excel (tm) spreadsheet files"
+name = "xlrd"
+optional = false
+python-versions = "*"
+version = "1.1.0"
+
+[package.source]
+reference = "douban"
+url = "https://pypi.doubanio.com/simple"
+
+[[package]]
+category = "main"
+description = "Utilities for working with Excel files that require both xlrd and xlwt"
+name = "xlutils"
+optional = false
+python-versions = "*"
+version = "2.0.0"
+
+[package.dependencies]
+xlrd = ">=0.7.2"
+xlwt = ">=0.7.4"
+
+[package.extras]
+build = ["pkginfo", "setuptools-git", "sphinx", "twine", "wheel"]
+test = ["coveralls", "errorhandler", "manuel", "mock", "nose", "nose-cov", "nose-fixes", "testfixtures", "tox"]
+
+[package.source]
+reference = "douban"
+url = "https://pypi.doubanio.com/simple"
+
+[[package]]
+category = "main"
+description = "Library to create spreadsheet files compatible with MS Excel 97/2000/XP/2003 XLS files, on any platform, with Python 2.6, 2.7, 3.3+"
+name = "xlwt"
+optional = false
+python-versions = "*"
+version = "1.3.0"
+
+[package.source]
+reference = "douban"
+url = "https://pypi.doubanio.com/simple"
+
+[metadata]
+content-hash = "59f7d264433f53d556aca955cdb02a7d42c5857a1e894b5e813042570c83a21c"
+python-versions = "^3.6"
+
+[metadata.files]
+lbj-common = [
+    {file = "lbj_common-1.0-py3-none-any.whl", hash = "sha256:b2a9353c001be26bcda2ae10bae1a47e8e3a63a56c46e40e8ecf9431054c52bc"},
+]
+wheel = [
+    {file = "wheel-0.34.2-py2.py3-none-any.whl", hash = "sha256:df277cb51e61359aba502208d680f90c0493adec6f0e848af94948778aed386e"},
+    {file = "wheel-0.34.2.tar.gz", hash = "sha256:8788e9155fe14f54164c1b9eb0a319d98ef02c160725587ad60f14ddc57b6f96"},
+]
+xlrd = [
+    {file = "xlrd-1.1.0-py2.py3-none-any.whl", hash = "sha256:83a1d2f1091078fb3f65876753b5302c5cfb6a41de64b9587b74cefa75157148"},
+    {file = "xlrd-1.1.0.tar.gz", hash = "sha256:8a21885513e6d915fe33a8ee5fdfa675433b61405ba13e2a69e62ee36828d7e2"},
+]
+xlutils = [
+    {file = "xlutils-2.0.0-py2.py3-none-any.whl", hash = "sha256:b56640862c030e9d53104e7f1d750135fdfabf6bf55e425e5ac40fdee9dbaeb9"},
+    {file = "xlutils-2.0.0.tar.gz", hash = "sha256:7e0e2c233bd185fecf5e2bd3f4e9469ca4a3bd87da64c82cfe5b2af27e7f9e54"},
+]
+xlwt = [
+    {file = "xlwt-1.3.0-py2.py3-none-any.whl", hash = "sha256:a082260524678ba48a297d922cc385f58278b8aa68741596a87de01a9c628b2e"},
+    {file = "xlwt-1.3.0.tar.gz", hash = "sha256:c59912717a9b28f1a3c2a98fd60741014b06b043936dcecbc113eaaada156c88"},
+]

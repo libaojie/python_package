@@ -1,14 +1,14 @@
 [tool.poetry]
-name = "lbj_common_venv"
+name = "lbj_df_venv"
 version = "0.1.0"
 description = ""
 authors = ["libaojie <libaojie@qq.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
-setuptools = "19.2.0"
-wheel = "0.34.2"
+pandas = "0.23.4"
 
+lbj-common = {path = "../lbj_common/dist/lbj_common-1.0-py3-none-any.whl"}
 
 [tool.poetry.dev-dependencies]
 

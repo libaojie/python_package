@@ -2,14 +2,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='lbj-common',
+    name='lbj-df',
     version='1.0',
     packages=find_packages(),
     install_requires=[
-        "setuptools==19.2.0",
-        "wheel==0.34.2"
+        "pandas==0.23.4"
     ],
-    description='基础工具包',
+    description='DataFrame的操作包',
     url='None',
     author='李宝杰',
     author_email='libaojie@qq.com',
