@@ -11,10 +11,21 @@ import os
 
 from lbj_common.log_tool import LogTool
 
+
 class FileTool(object):
     """
     文件工具
     """
+
+    @staticmethod
+    def mkdir_file(path):
+        """
+        创建文件的父菜单
+        :param path:
+        :return:
+        """
+        if not os.path.exists(os.path.dirname(path)):
+            os.makedirs(os.path.dirname(path))
 
     @staticmethod
     def is_file(file_path):
