@@ -9,9 +9,9 @@
 """
 from docxtpl import DocxTemplate
 
-from lhzl_common.decorator import except_fun
-from lhzl_common.file.file_tool import FileTool
-from lhzl_common.log_tool import LogTool
+from lbj_common.decorator import except_fun
+from lbj_common.file.file_tool import FileTool
+from lbj_common.log_tool import LogTool
 
 
 class WordTool(object):

@@ -7,16 +7,16 @@
 @File       : model.py
 @Software   : PyCharm
 """
-from lhzl_common.config_tool import ConfigTool
-from lhzl_common.log_tool import LogTool
-from lhzl_common.time_tool import TimeTool
-from lhzl_common.utils import Utils
-from lhzl_db.db_session_tool import DBSessionTool
+from lbj_common.config_tool import ConfigTool
+from lbj_common.log_tool import LogTool
+from lbj_common.time_tool import TimeTool
+from lbj_common.utils import Utils
+from lbj_db.db_session_tool import DBSessionTool
 
-from lhzl_flask.enum.del_flag import DelFlag
-from lhzl_flask.extensions import db
-from lhzl_flask.orm_tool import OrmTool
-from lhzl_flask.user_tool import UserTool
+from lbj_flask.enum.del_flag import DelFlag
+from lbj_flask.extensions import db
+from lbj_flask.orm_tool import OrmTool
+from lbj_flask.user_tool import UserTool
 
 
 class EntityBase(object):

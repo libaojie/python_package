@@ -2,4 +2,4 @@
 *.pyc
 /build
 /dist
-/lhzl_db/tests/data
+/lbj_db/tests/data

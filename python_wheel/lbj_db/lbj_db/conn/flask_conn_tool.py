@@ -1,6 +1,6 @@
-from lhzl_common.log_tool import LogTool
+from lbj_common.log_tool import LogTool
 
-from lhzl_db.conn.db_conn_tool import DBConnTool
+from lbj_db.conn.db_conn_tool import DBConnTool
 
 
 class FlaskConnTool(object):
@@ -12,7 +12,7 @@ class FlaskConnTool(object):
     def get_mysql_dict(cls, conn_str):
         """
         获取mysql的数据字典
-        :param conn_str:  形如 {'oracle_lhzlmr': {'ip': '192.168.160.231', 'port': '1521', 'uname': 'lhzlmr', 'pwd': '****', 'sname': 'orcl'}
+        :param conn_str:  形如 {'oracle_lbjmr': {'ip': '192.168.160.231', 'port': '1521', 'uname': 'lbjmr', 'pwd': '****', 'sname': 'orcl'}
         :return:
         """
         if conn_str is None:
@@ -36,7 +36,7 @@ class FlaskConnTool(object):
     def get_oracle_dict(cls, conn_str):
         """
         获取oracle的数据字典
-        :param conn_str:    形如 {'oracle_lhzlmr': {'ip': '192.168.160.231', 'port': '1521', 'uname': 'lhzlmr', 'pwd': '****', 'sname': 'orcl'}
+        :param conn_str:    形如 {'oracle_lbjmr': {'ip': '192.168.160.231', 'port': '1521', 'uname': 'lbjmr', 'pwd': '****', 'sname': 'orcl'}
         :return:
         """
         if conn_str is None:

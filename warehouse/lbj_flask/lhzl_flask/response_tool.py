@@ -11,14 +11,14 @@ import os
 from datetime import datetime
 from urllib.parse import quote
 
-from lhzl_common.log_tool import LogTool
-from lhzl_common.time_tool import TimeTool
-from lhzl_db.entity.ret_find import RetFind
+from lbj_common.log_tool import LogTool
+from lbj_common.time_tool import TimeTool
+from lbj_db.entity.ret_find import RetFind
 from flask import json, Response, make_response, send_from_directory
 
-from lhzl_flask.enum.error_code import ErrorCode
-from lhzl_flask.res.comm_res import CommRes
-from lhzl_flask.res.page_res import PageRes
+from lbj_flask.enum.error_code import ErrorCode
+from lbj_flask.res.comm_res import CommRes
+from lbj_flask.res.page_res import PageRes
 
 
 class ResponseTool(object):
@@ -29,7 +29,7 @@ class ResponseTool(object):
         最后处理response
         :return:
         """
-        from lhzl_db.db_session_tool import DBSessionTool
+        from lbj_db.db_session_tool import DBSessionTool
 
         LogTool.info(f"请求结束，状态码【{response.status_code}】")
         if response.status_code == 200:
@@ -57,7 +57,7 @@ class ResponseTool(object):
         if data is not None:
 
             # 基本类型处理
-            from lhzl_flask.entity.entity_base import EntityBase
+            from lbj_flask.entity.entity_base import EntityBase
             if isinstance(data, dict) or isinstance(data, list) or isinstance(data, str) or isinstance(data,
                                                                                                        EntityBase):
                 data = CommRes(ErrorCode.SUCCESS, data=data)
@@ -87,7 +87,7 @@ class ResponseTool(object):
         :param param:
         :return:
         """
-        from lhzl_flask.entity.entity_base import EntityBase
+        from lbj_flask.entity.entity_base import EntityBase
 
         def _f(param):
             if param is None:

@@ -9,8 +9,8 @@
 """
 import json
 
-from lhzl_common.log_tool import LogTool
-from lhzl_db.entity.ret_find import RetFind
+from lbj_common.log_tool import LogTool
+from lbj_db.entity.ret_find import RetFind
 
 
 class CommRes(object):
@@ -53,7 +53,7 @@ class CommRes(object):
         :param obj:
         :return:
         """
-        from lhzl_flask.response_tool import ResponseTool
+        from lbj_flask.response_tool import ResponseTool
         return {
             "code": obj.code,
             "msg": obj.msg,

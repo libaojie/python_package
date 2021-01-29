@@ -15,7 +15,7 @@ import xlrd
 import xlwt
 from xlutils.copy import copy
 
-from lhzl_common.log_tool import LogTool
+from lbj_common.log_tool import LogTool
 
 
 class ExcelTool(object):

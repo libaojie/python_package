@@ -7,11 +7,11 @@
 @File       : db_base_tool.py
 @Software   : PyCharm
 """
-from lhzl_common.log_tool import LogTool
-from lhzl_common.type_tool import TypeTool
+from lbj_common.log_tool import LogTool
+from lbj_common.type_tool import TypeTool
 
-from lhzl_db.entity.ret_find import RetFind
-from lhzl_db.sql_tool import SQLTool
+from lbj_db.entity.ret_find import RetFind
+from lbj_db.sql_tool import SQLTool
 
 
 class DBBaseTool(object):
@@ -25,7 +25,7 @@ class DBBaseTool(object):
     page_size = 15  # 默认每页数量
     page_code = 'PAGE_ROW_CNT'  # 默认页码的数据库字典code
     page_key = 'DEFAULT'  # 默认每页数量数据字典key
-    dict_tbl_name = 'lhzlmr.mr_dict'  # 数据字典表名
+    dict_tbl_name = 'lbjmr.mr_dict'  # 数据字典表名
 
     def __init__(self):
         pass
@@ -37,7 +37,7 @@ class DBBaseTool(object):
     @classmethod
     def init_db(cls, db):
         try:
-            # 此处无需处理编译错误，lhzl-flask包会自动引用处理。
+            # 此处无需处理编译错误，lbj-flask包会自动引用处理。
             from flask_sqlalchemy import SQLAlchemy
             if isinstance(db, SQLAlchemy):
                 cls.db = db

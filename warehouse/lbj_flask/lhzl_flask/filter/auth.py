@@ -10,17 +10,17 @@
 import time
 import urllib.parse
 
-from lhzl_common.config_tool import ConfigTool
-from lhzl_common.decorator import except_fun
-from lhzl_common.log_tool import LogTool
+from lbj_common.config_tool import ConfigTool
+from lbj_common.decorator import except_fun
+from lbj_common.log_tool import LogTool
 from flask import jsonify
 
-from lhzl_flask.common import constant
-from lhzl_flask.enum.error_code import ErrorCode
-from lhzl_flask.http_tool import HttpTool
-from lhzl_flask.ip_tool import IpTool
-from lhzl_flask.res.comm_res import CommRes
-from lhzl_flask.response_tool import ResponseTool
+from lbj_flask.common import constant
+from lbj_flask.enum.error_code import ErrorCode
+from lbj_flask.http_tool import HttpTool
+from lbj_flask.ip_tool import IpTool
+from lbj_flask.res.comm_res import CommRes
+from lbj_flask.response_tool import ResponseTool
 
 
 class Auth(object):
@@ -37,7 +37,7 @@ class Auth(object):
         if request is None:
             return False, ResponseTool.get_json_ret(CommRes(ErrorCode.HAVE_NOT_REQ))
 
-        request.__setattr__(constant.lhzl_Time_Begin, time.localtime())
+        request.__setattr__(constant.lbj_Time_Begin, time.localtime())
 
         userId = request.headers.get(constant.USERID)
         user = request.headers.get(constant.USERNAME)

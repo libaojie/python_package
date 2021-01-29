@@ -7,7 +7,7 @@ USERNAME = "username"
 LOGINNAME = "loginname"
 SYSLOGID = "sysLogId"
 MSG = "msg"
-lhzl_Time_Begin = "lhzltimebegin"
+lbj_Time_Begin = "lbjtimebegin"
 
 
 # header

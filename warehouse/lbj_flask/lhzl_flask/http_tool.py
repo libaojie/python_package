@@ -10,7 +10,7 @@
 import json
 
 import requests
-from lhzl_common.log_tool import LogTool
+from lbj_common.log_tool import LogTool
 from flask import request
 
 

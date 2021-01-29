@@ -7,14 +7,14 @@
 @File       : request_tool.py
 @Software   : PyCharm
 """
-from lhzl_common.config_tool import ConfigTool
-from lhzl_common.log_tool import LogTool
-from lhzl_common.type_tool import TypeTool
+from lbj_common.config_tool import ConfigTool
+from lbj_common.log_tool import LogTool
+from lbj_common.type_tool import TypeTool
 from flask import request
 
-from lhzl_flask.enum.error_code import ErrorCode
-from lhzl_flask.res.comm_res import CommRes
-from lhzl_flask.response_tool import ResponseTool
+from lbj_flask.enum.error_code import ErrorCode
+from lbj_flask.res.comm_res import CommRes
+from lbj_flask.response_tool import ResponseTool
 
 
 class RequestTool(object):

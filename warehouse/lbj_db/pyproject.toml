@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "lhzl_db_venv"
+name = "lbj_db_venv"
 version = "0.1.0"
 description = ""
 authors = ["libaojie <libaojie@qq.com>"]
@@ -9,7 +9,7 @@ python = "^3.6"
 sqlalchemy = "1.2.0"
 pymysql = "0.8.0"
 cx-oracle = "6.2.1"
-lhzl-common = {path = "../lhzl_common/dist/lhzl_common-0.3-py3-none-any.whl"}
+lbj-common = {path = "../lbj_common/dist/lbj_common-0.3-py3-none-any.whl"}
 
 
 

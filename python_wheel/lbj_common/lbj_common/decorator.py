@@ -12,7 +12,7 @@ import datetime as dt
 import traceback
 from threading import Thread
 
-from lhzl_common.log_tool import LogTool
+from lbj_common.log_tool import LogTool
 
 
 def except_fun(func):

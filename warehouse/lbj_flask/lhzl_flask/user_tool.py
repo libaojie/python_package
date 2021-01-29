@@ -7,10 +7,10 @@
 @File       : user_tool.py
 @Software   : PyCharm
 """
-from lhzl_common.log_tool import LogTool
+from lbj_common.log_tool import LogTool
 from flask import g
 
-from lhzl_flask.common import constant
+from lbj_flask.common import constant
 
 
 class UserTool(object):

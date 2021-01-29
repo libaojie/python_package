@@ -1,8 +1,8 @@
-from lhzl_common.decorator import log_fun
-from lhzl_common.log_tool import LogTool
+from lbj_common.decorator import log_fun
+from lbj_common.log_tool import LogTool
 
-from lhzl_db.db_base_tool import DBBaseTool
-from lhzl_db.entity.ret_run_sql import RetRunSql
+from lbj_db.db_base_tool import DBBaseTool
+from lbj_db.entity.ret_run_sql import RetRunSql
 
 
 class DBSessionTool(DBBaseTool):

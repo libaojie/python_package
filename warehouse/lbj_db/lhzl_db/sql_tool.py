@@ -9,8 +9,8 @@
 """
 import datetime
 
-from lhzl_common.log_tool import LogTool
-from lhzl_common.time_tool import TimeTool
+from lbj_common.log_tool import LogTool
+from lbj_common.time_tool import TimeTool
 
 
 class SQLTool(object):

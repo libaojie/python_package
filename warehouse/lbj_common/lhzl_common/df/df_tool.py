@@ -8,7 +8,7 @@
 @Software   : PyCharm
 """
 import pandas as pd
-from lhzl_common.log_tool import LogTool
+from lbj_common.log_tool import LogTool
 
 
 class DFTool(object):

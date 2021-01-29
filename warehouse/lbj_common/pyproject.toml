@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "lhzl_common_venv"
+name = "lbj_common_venv"
 version = "0.1.0"
 description = ""
 authors = ["libaojie <libaojie@qq.com>"]

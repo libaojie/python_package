@@ -1,9 +1,9 @@
 import os
 import sys
 
-from lhzl_common.config_tool import ConfigTool
-from lhzl_common.log_tool1 import LogTool
-from lhzl_common.time_tool import TimeTool
+from lbj_common.config_tool import ConfigTool
+from lbj_common.log_tool1 import LogTool
+from lbj_common.time_tool import TimeTool
 
 try:
     mainroot = os.path.dirname(os.path.abspath(__file__))

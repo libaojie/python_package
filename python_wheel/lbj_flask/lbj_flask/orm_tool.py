@@ -7,12 +7,12 @@
 @File       : orm_tool.py
 @Software   : PyCharm
 """
-from lhzl_common.log_tool import LogTool
-from lhzl_db.db_engine_tool import DBEngineTool
-from lhzl_db.entity.ret_find import RetFind
+from lbj_common.log_tool import LogTool
+from lbj_db.db_engine_tool import DBEngineTool
+from lbj_db.entity.ret_find import RetFind
 from sqlalchemy import text
 
-from lhzl_flask.enum.del_flag import DelFlag
+from lbj_flask.enum.del_flag import DelFlag
 
 
 class OrmTool(object):

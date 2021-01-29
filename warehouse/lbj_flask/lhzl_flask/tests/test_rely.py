@@ -7,7 +7,7 @@
 @File       : test_rely.py
 @Software   : PyCharm
 """
-from lhzl_common.log_tool import LogTool
+from lbj_common.log_tool import LogTool
 
 
 def test_log():
