@@ -1,0 +1,8 @@
+/.venv
+/data
+/project/data
+/.idea
+*.pyc
+/build
+/dist
+package/build
