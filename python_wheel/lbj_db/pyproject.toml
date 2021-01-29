@@ -8,8 +8,11 @@ authors = ["libaojie <libaojie@qq.com>"]
 python = "^3.6"
 sqlalchemy = "1.2.0"
 pymysql = "0.8.0"
-cx-oracle = "6.2.1"
+cx_oracle = "8.1.0"
+
 lbj-common = {path = "../lbj_common/dist/lbj_common-1.0-py3-none-any.whl"}
+lbj-df = {path = "../lbj_df/dist/lbj_df-1.0-py3-none-any.whl"}
+
 
 
 
