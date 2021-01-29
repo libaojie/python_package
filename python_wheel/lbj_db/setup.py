@@ -8,7 +8,7 @@ setup(
     install_requires=[
         "sqlalchemy ==1.2.0",
         "pymysql==0.8.0",
-        "cx-oracle==6.2.1"
+        "cx-oracle==8.1.0"
     ],
     description='数据库连接中间层',
     url='None',
