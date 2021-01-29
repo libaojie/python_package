@@ -85,34 +85,27 @@ class LinuxPackage(Package):
 
         self.build_exe_options = {
             'packages': [
-                # 最基础
-                'asyncio',
-                # pandas相关
                 'pandas',
                 'numpy',
-
-                # gunicorn 相关
+                'asyncio',
                 'gunicorn.glogging',
                 'gunicorn.workers.sync',
                 'gunicorn.workers.ggevent',
                 'gevent._abstract_linkable',
                 'gevent.time',
                 'geventwebsocket.gunicorn.workers',
-
                 'engineio',
-                'engineio.async_drivers.threading',
-                # Socket 相关
                 'socketio',
-                'flask_socketio'
+                'flask_socketio',
+                'engineio.async_drivers.threading'
             ],
-
-            'includes': ['jinja2.ext', 'idna.idnadata'],
-            'excludes': ['distutils'],
             'include_files': [(distutils_path, 'lib/distutils'),
                               'linux/start.sh',
                               'linux/stop.sh',
                               '../project/config.conf',
-                              'linux/test.sh']
+                              'linux/test.sh'],
+            'includes': "idna.idnadata",
+            'excludes': ['distutils']
         }
 
         self.executables = [
@@ -137,13 +130,9 @@ class WindowsPackage(Package):
         os.environ['TK_LIBRARY'] = os.path.join(self.python_path, 'tcl', 'tk8.6')
         distutils_path = os.path.join(os.path.dirname(opcode.__file__), 'distutils')
         self.build_exe_options = {
-            'packages': ['pandas', 'numpy', 'asyncio'],
+            'packages': ['asyncio'],
             'include_files': [(distutils_path, 'libs/distutils'),
-                              'linux/start.sh',
-                              'linux/stop.sh',
-                              'linux/test.sh',
                               '../project/config.conf'],
-            'includes': "idna.idnadata",
             'excludes': ['distutils']
         }
 
