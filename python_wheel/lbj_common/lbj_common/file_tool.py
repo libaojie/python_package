@@ -58,7 +58,7 @@ class FileTool(object):
         return False
 
     @staticmethod
-    def open_file(rel_path):
+    def open_file(rel_path, encoding='utf-8'):
         """
         打开文件操作
         :param rel_path: 文件路径
@@ -68,7 +68,7 @@ class FileTool(object):
         content = None
         rel_path = FileTool.get_abspath(rel_path)
         try:
-            with open(rel_path, 'r+', encoding='utf8') as f:
+            with open(rel_path, 'r+', encoding=encoding) as f:
                 content = f.read()
         except Exception as e:
             LogTool.error(f"打开文件出错：【{e}】")
@@ -77,21 +77,18 @@ class FileTool(object):
             return content
 
     @staticmethod
-    def write_file(rel_path):
+    def write_file(rel_path, content, encoding='utf-8', is_append=False):
         """
         写文件
         :param rel_path:
+        :param content:
+        :param encoding: 编码方式
+        :param is_append:
         :return:
         """
-        w = None
         rel_path = FileTool.get_abspath(rel_path)
-        try:
-            w = open(rel_path, 'w+')
-            return w
-        except Exception as e:
-            LogTool.error(f"打开文件出错：【{e}】")
-            w.close() if w else None
-            return None
+        with open(rel_path, 'a' if is_append else 'w', encoding=encoding) as f:
+            f.write(content)
 
     @staticmethod
     def del_file(rel_path):
@@ -110,5 +107,3 @@ class FileTool(object):
         elif os.path.isfile(rel_path):
             # 删除文件
             os.remove(rel_path)
-
-

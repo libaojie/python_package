@@ -22,6 +22,7 @@ v1.1    2021.02.01
     1、LogTool.print string化
     2、FileTool Except输出错误
     3、FileTool 转化绝对路径，明确输入为相对路径
+    4、修改FileTool 写的bug
 
 v1.0    2021.01.29
 ```
