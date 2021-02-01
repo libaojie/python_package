@@ -65,7 +65,7 @@ class LogTool(object):
         if not LogTool.is_init:
             return None
         print(log_message)
-        LogTool.info(log_message)
+        LogTool.info(f"{log_message}")
 
     # 静态方法
     @staticmethod
