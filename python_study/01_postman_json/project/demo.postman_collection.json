@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "b230fc27-8de4-4cbf-86b4-286d9d16c933",
+		"name": "demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{ip}}:15020/hi",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "15020",
+					"path": [
+						"hi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "测试POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\":\"123\"\n}"
+				},
+				"url": {
+					"raw": "http://{{ip}}:18010/api/v1/demo/post",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "18010",
+					"path": [
+						"api",
+						"v1",
+						"demo",
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
