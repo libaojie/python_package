@@ -1,5 +1,6 @@
 /.idea
 *.pyc
+*.temp
 /build
 /dist
 project/data

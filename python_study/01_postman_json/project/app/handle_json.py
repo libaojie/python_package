@@ -15,10 +15,14 @@ class HandleJson(object):
 
         items = re.findall("\"item\":\W+\[(.+)\]", content, re.S)
 
+        ret = ""
         for item in items:
             its = re.findall("{\W+?(\"name\".+?)\"response\":\W+?\[", item, re.S)
             LogTool.print(f"名称\t方式\t路径\t")
+            ret = ""
             for it in its:
                 name = re.findall(
                     "\"name\"\W+?\"(.+?)\",.+?\"method\":\W+?\"(.+?)\",.+?\"raw\":\W+?\"http://.+?/(.+?)\"", it, re.S)
-                LogTool.print(f"{name[0][0]}\t{name[0][1]}\t/{name[0][2]}\t")
+                ret += f"{name[0][0]}\t{name[0][1]}\t/{name[0][2]}\t\n"
+            LogTool.print(ret)
+        FileTool.write_file("解析json结果.temp", ret)

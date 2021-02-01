@@ -118,7 +118,7 @@ importlib-metadata = [
     {file = "importlib_metadata-3.4.0.tar.gz", hash = "sha256:fa5daa4477a7414ae34e95942e4dd07f62adf589143c875c133c1e53c4eff38d"},
 ]
 lbj-common = [
-    {file = "lbj_common-1.1-py3-none-any.whl", hash = "sha256:7a276d0ab77f80d8bfac8f0823e00489f094de6e476db0145a0bfbe32e027953"},
+    {file = "lbj_common-1.1-py3-none-any.whl", hash = "sha256:d9a3be26f4dcdca325fdbbc0b3ab7053982d13537d7ddeec24f19221e370be41"},
 ]
 typing-extensions = [
     {file = "typing_extensions-3.7.4.3-py2-none-any.whl", hash = "sha256:dafc7639cde7f1b6e1acc0f457842a83e722ccca8eef5270af2d74792619a89f"},
