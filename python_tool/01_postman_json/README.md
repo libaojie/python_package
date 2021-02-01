@@ -7,7 +7,8 @@
 
     POSTMAN json文件解析 
     
-    从POSTMAN中Export出json文件，运行程序，选中json，即可解析出 服务名称、服务路径、服务地址   
+    从POSTMAN中Export出json文件，运行程序，选中json，即可解析出 服务名称、服务路径、服务地址  
+
     
 ## 推荐环境
 
