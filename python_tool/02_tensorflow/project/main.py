@@ -46,20 +46,20 @@ def __run():
     __init_env()
     __init_log()
 
-    _path = tkinter.filedialog.askopenfilename(filetypes=[("JSON文件", "*.json")])
-    if _path == '':
-        LogTool.print("请选择正确的json路径！")
-        return
+    from project.demo1 import TFDemo
+    tfDemo = TFDemo()
+    tfDemo.main()
 
-    from project.app.handle_json import HandleJson
-    handleJson = HandleJson()
-    handleJson.handle(_path)
+    # from project.demo2 import TFDemo2
+    # tfDemo = TFDemo2()
+    # tfDemo.main()
+
 
 
 if __name__ == '__main__':
     try:
         __run()
-        input("")
+        # input("")
     except Exception as err:
         from lbj_common.log_tool import LogTool
         LogTool.print(traceback.format_exc())
