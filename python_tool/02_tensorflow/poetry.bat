@@ -1,0 +1,25 @@
+@ echo off
+REM 声明采用UTF-8编码
+chcp 65001
+
+echo 初始化环境
+python -m poetry install
+echo 更新环境
+python -m poetry update
+
+python -m poetry run pip install torch==1.7.1+cpu torchvision==0.8.2+cpu torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+
+echo setuptools降级
+python -m poetry run pip install setuptools==19.2.0
+
+echo ------------------------------------------------
+python -m poetry run pip list
+echo ------------------------------------------------
+python -m poetry show
+echo ------------------------------------------------
+python -m poetry show --tree
+echo ------------------------------------------------
+
+python -m poetry env info -p | clip
+
+pause
