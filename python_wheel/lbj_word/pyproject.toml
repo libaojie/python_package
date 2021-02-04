@@ -7,7 +7,7 @@ authors = ["libaojie <libaojie@qq.com>"]
 [tool.poetry.dependencies]
 python = "^3.6"
 docxtpl = "0.4.13"
-lbj-common = {path = "../lbj_common/dist/lbj_common-1.0-py3-none-any.whl"}
+lbj-common = {path = "../lbj_common/dist/lbj_common-1.2-py3-none-any.whl"}
 
 [tool.poetry.dev-dependencies]
 

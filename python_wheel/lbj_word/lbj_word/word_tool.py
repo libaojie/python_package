@@ -10,7 +10,7 @@
 from docxtpl import DocxTemplate
 
 from lbj_common.decorator import except_fun
-from lbj_common.file.file_tool import FileTool
+from lbj_common.file_tool import FileTool
 from lbj_common.log_tool import LogTool
 
 
@@ -41,6 +41,6 @@ class WordTool(object):
         #         {'label':'green', 'cols':['21', '22', '23', '24', '25']}]
         # }
         doc.render(context)
-        FileTool.mkdir_parent_file(filepath)
+        FileTool.mkdir_file(filepath)
         doc.save(filepath)
 
