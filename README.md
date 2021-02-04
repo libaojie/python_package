@@ -28,6 +28,8 @@
 ## 实用工具
 
 - [01_postman_json](./python_tool/01_postman_json/README.md) 提取Postman文件的json文件中的关键信息
+- [02_tensorflow](./python_tool/02_tensorflow/README.md) tensorflow学习项目
+- [03_db2api](./python_tool/03_db2api/README.md) 连接数据库生成wordapi文档
 
 
 ## 知识学习

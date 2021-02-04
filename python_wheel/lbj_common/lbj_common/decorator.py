@@ -53,7 +53,7 @@ def log_fun(func):
     return wrapper
 
 
-def async(f):
+def async_fun(f):
     """
     异步多线程
     :param f:

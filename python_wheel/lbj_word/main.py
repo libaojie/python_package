@@ -15,6 +15,7 @@ def _delete_file_path(input_path):
     if os.path.isdir(input_path):
         shutil.rmtree(input_path)
 
+
 _delete_file_path("./build")
 # os.system("python -m pipenv run python setup.py bdist_wheel")
 # os.system("python -m poetry run python setup.py bdist_wheel")
