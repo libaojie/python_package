@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "03_db2api"
+version = "0.1.0"
+description = "python项目flask框架"
+authors = ["libaojie <libaojie@qq.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+cx-freeze = "^6.4.2"
+
+lbj_common = {path = "../../python_wheel/lbj_common/dist/lbj_common-1.2-py3-none-any.whl"}
+lbj_db = {path = "../../python_wheel/lbj_db/dist/lbj_db-1.0-py3-none-any.whl"}
+lbj_flask = {path = "../../python_wheel/lbj_flask/dist/lbj_flask-1.0-py3-none-any.whl"}
+lbj_word = {path = "../../python_wheel/lbj_word/dist/lbj_word-1.1-py3-none-any.whl"}
+
+[tool.poetry.dev-dependencies]
+[[tool.poetry.source]]
+name = "douban"
+url = "https://pypi.doubanio.com/simple/"
+default = true
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

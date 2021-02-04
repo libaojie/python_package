@@ -1,0 +1,49 @@
+<script type=text/javascript>
+// $(function () {
+//     $(".ischecked").on("click",
+//
+//     // checkbox选中
+// })
+//     function check() {
+//
+//             alert($(this).checked)
+//             // alert($(this).prop("checked") )
+//             // document.getElementById("check1").checked=true
+//             var input = $(this).next()
+//             if ($(input).val() == 0) {
+//                 // $(this).prop("checked", false);
+//                 // $(this).find("input").prop("value", "false");
+//                 $(input).attr('value', 1)
+//             } else {
+//                 // $(this).prop("checked", true);
+//                 // $(this).find("input").prop("value", "true");
+//                 $(input).attr('value', 0)
+//             }
+//         }
+</script>
+<table>
+    <thead>
+    <th>选择</th>
+    <th>列名</th>
+    <th>字段名</th>
+    <th>最大长度</th>
+    <th>是否为空</th>
+    <th>注释</th>
+    <th>备注</th>
+    </thead>
+    <tbody>
+    {% for col in cols %}
+    <tr>
+        <!--<td><input type="checkbox" class="ischecked" name="isChecked" onclick=check()><input type="hidden" name="isChecked" value=0></td>-->
+        <td><input type="checkbox" class="ischecked"> <input type="hidden" name="isChecked" value=0></td>
+        <td>{{ col.colName }}</td>
+        <td><input type="text" name="colName" value="{{ col.newColName }}"></td>
+        <td>{{ col.colLen }}</td>
+        <td><input type="text" name="isNull" value="{{ col.isNull }}"></td>
+        <td><input type="text" name="colValue" value="{{ col.remark }}"></td>
+        <td><input type="text" name="remark"></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+

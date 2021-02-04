@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<script type=text/javascript src="{{ url_for('static', filename='scripts/create_api/index.js') }}"></script>
+
+<!--<form method="post" enctype='multipart/form-data' >-->
+<form method="post" id="form" enctype='multipart/form-data' action="/tool/createApi/handleCols" >
+    库名：
+    <select id='db' name="db">
+        <option value="db1">db1</option>
+    </select>
+
+    <br/>
+    表名：
+    <input id="tblName" type="text" name="tblName">
+
+    <br/>
+    <input id="checkTblName" type="button"  value="解析表字段">
+    <hr />
+    解析输入参数：
+    <div id="reqCol" name="reqCol">
+    </div>
+
+    <br/>
+    <hr />
+    解析返回参数：
+    <div id="repCol"  name="repCol">
+    </div>
+
+    <br/>
+    <hr/>
+     <br/>
+    服务名称：
+    <input type="text" name="serv">
+
+    <br/>
+    服务地址：
+    <input type="text" name="url">
+
+    <br/>
+    请求方式：
+    <select id='type' name="type">
+        <option value="GET_LIST">GET_LIST</option>
+        <option value="GET">GET</option>
+        <option value="POST">POST</option>
+        <option value="PUT">PUT</option>
+        <option value="DELETE">DELETE</option>
+    </select>
+
+    <br />
+    <input id="handleCols" type="button"  value="生成文档">
+    <!--<input  type="submit"  value="生成文档">-->
+    <hr />
+
+</form>
+<br/>
+<hr/>
+<!--<div id="api">-->
+
+<!--</div>-->
+{% endblock %}
+
+
+<!--<form method="post" enctype='multipart/form-data' action="/tool/createApi/readDB">-->
+<!--配置清单:<input type="file" name="file"><br>-->
+<!--初始化数据库:<input type="checkbox" name="db" checked="checked"><br>-->
+<!--备注:<input type="text" name="age"><br>-->
+<!--<input type="submit" value="开始处理">-->
+<!--</form>-->
