@@ -101,8 +101,8 @@ def before_request():
     全局请求过滤
     :return:
     """
-    from project.app.plugins.util_tool import UtilTool
-    return UtilTool.handle_request()
+    from lbj_flask.request_tool import RequestTool
+    return RequestTool.handle_request()
 
 
 # @app.after_request
