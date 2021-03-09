@@ -11,6 +11,8 @@ cx-freeze = "^6.4.2"
 lbj_common = {path = "package/wheel/lbj_common-1.1-py3-none-any.whl"}
 tensorflow = "1.13.1"
 
+numpy = "1.16.0"
+
 [tool.poetry.dev-dependencies]
 [[tool.poetry.source]]
 name = "douban"
