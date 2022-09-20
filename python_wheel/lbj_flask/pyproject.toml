@@ -8,10 +8,10 @@ authors = ["libaojie <libaojie@qq.com>"]
 python = "^3.6"
 gevent = "1.4.0"
 gunicorn = "19.9.0"
-Werkzeug = "0.15"
-flask = "0.12.1"
+Werkzeug = "2.0"
+flask = "2.0.3"
 requests = "2.18.4"
-flask-restful = "0.3.6"
+flask-restful = "0.3.9"
 flask-sqlalchemy = "2.3.0"
 flask-cors = "3.0.4"
 
