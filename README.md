@@ -39,4 +39,16 @@
 ## 推荐环境
 
     1、python == 3.7.4
+
+    1、python == 3.8.8
     2、poetry == 1.0.5
+
+    python -m pip list
+    python -m pip install poetry==1.0.5
+    设置poetry路径
+    poetry config --list
+    1、
+    C:\Users\snow\AppData\Roaming\pypoetry\config.toml
+    cache-dir = "D:\\venv\\poetry"
+    2、
+    poetry config virtualenvs.path "D:\\venv\\poetry"
