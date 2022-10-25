@@ -5,10 +5,12 @@ description = ""
 authors = ["libaojie <libaojie@qq.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
-pandas = "0.23.4"
+python = "^3.8"
+pip = "22.3"
+pandas = "1.3"
 
-lbj-common = {path = "../lbj_common/dist/lbj_common-1.0-py3-none-any.whl"}
+lbj-common = {path = "../lbj_common/dist/lbj_common-2.0-py3-none-any.whl"}
+lbj-db = {path = "../lbj_db/dist/lbj_db-2.0-py3-none-any.whl"}
 
 [tool.poetry.dev-dependencies]
 
