@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='lbj-db',
-    version='1.0',
+    version='2.0',
     packages=find_packages(),
     install_requires=[
         "sqlalchemy ==1.2.0",
