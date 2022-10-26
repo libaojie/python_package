@@ -506,7 +506,7 @@ reference = "douban"
 url = "https://pypi.doubanio.com/simple"
 
 [metadata]
-content-hash = "0480adbfb5949caeff9f679dc26192e97c51c61561c628a7b291de59dbd4cec5"
+content-hash = "7dbdc4c36ccb9b91bf04366d337f764a2c26333dae7e387e98e3c514f742e0a3"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -754,7 +754,7 @@ lbj-common = [
     {file = "lbj_common-2.0-py3-none-any.whl", hash = "sha256:17ab4c47e80930ed384af328d27899ddf07db645356a4c476809292a7245579f"},
 ]
 lbj-db = [
-    {file = "lbj_db-2.0-py3-none-any.whl", hash = "sha256:991c3c59ac4ec7b48c29e3f7037e040531d2810622d693aa5289ff741c0ff66d"},
+    {file = "lbj_db-2.0-py3-none-any.whl", hash = "sha256:8638c6fab7c08546be1636d129bcde71ffbaac49398299dcd4eb836e2c4b79ac"},
 ]
 markupsafe = [
     {file = "MarkupSafe-2.1.1-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:86b1f75c4e7c2ac2ccdaec2b9022845dbb81880ca318bb7a0a01fbf7813e3812"},

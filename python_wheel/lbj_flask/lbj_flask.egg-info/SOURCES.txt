@@ -1,3 +1,5 @@
+README.md
+pyproject.toml
 setup.py
 lbj_flask/__init__.py
 lbj_flask/extensions.py

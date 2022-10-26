@@ -5,6 +5,7 @@ setup(
     name='lbj-flask',
     version='2.0',
     packages=find_packages(),
+    setup_requires=['flask','flask-restful'],
     install_requires=[
         "gevent==22.10.1",
         "gunicorn==20.1.0",
@@ -13,7 +14,7 @@ setup(
         "flask-restful==0.3.9",
         "flask-sqlalchemy==2.3.0",
         "flask-cors==3.0.4",
-        "Werkzeug==2.2.2"
+        "Werkzeug==2.2.2",
     ],
     description='Flask公共插件',
     url='None',
