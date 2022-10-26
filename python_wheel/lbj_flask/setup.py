@@ -1,11 +1,10 @@
-
 from setuptools import setup, find_packages
 
 setup(
     name='lbj-flask',
     version='2.0',
     packages=find_packages(),
-    setup_requires=['flask','flask-restful'],
+    setup_requires=['flask', 'flask-restful', 'flask-sqlalchemy', 'Werkzeug'],
     install_requires=[
         "gevent>=22.10.1",
         "gunicorn>=20.1.0",
