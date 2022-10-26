@@ -189,7 +189,7 @@ lbj-common = [
     {file = "lbj_common-2.0-py3-none-any.whl", hash = "sha256:17ab4c47e80930ed384af328d27899ddf07db645356a4c476809292a7245579f"},
 ]
 lbj-db = [
-    {file = "lbj_db-2.0-py3-none-any.whl", hash = "sha256:8823c48f6f3e9150c8e1edf473756e2597f6ddd95b3ae04036609ec3351b6232"},
+    {file = "lbj_db-2.0-py3-none-any.whl", hash = "sha256:cc3f2e67356e27b327622c0360e5917d996dabad1f449e0fd9bf68ae6659bfae"},
 ]
 numpy = [
     {file = "numpy-1.23.4-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:95d79ada05005f6f4f337d3bb9de8a7774f259341c70bc88047a1f7b96a4bcb2"},

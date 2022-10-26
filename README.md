@@ -45,10 +45,17 @@
 
     python -m pip list
     python -m pip install poetry==1.0.5
-    设置poetry路径
+###设置poetry路径
     poetry config --list
     1、
     C:\Users\snow\AppData\Roaming\pypoetry\config.toml
     cache-dir = "D:\\venv\\poetry"
     2、
     poetry config virtualenvs.path "D:\\venv\\poetry"
+
+### 导出
+    poetry export -f requirements.txt --output requirements.txt
+    poetry run pip freeze > requirements.txt
+
+### 加入新包
+    poetry add gevent 

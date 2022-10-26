@@ -6,7 +6,7 @@ setup(
     version='2.0',
     packages=find_packages(),
     install_requires=[
-        "sqlalchemy ==1.2.0",
+        "sqlalchemy==1.2.0",
         "pymysql==0.8.0",
         "cx-oracle==8.1.0"
     ],
