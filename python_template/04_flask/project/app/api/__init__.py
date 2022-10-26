@@ -43,20 +43,20 @@ def before_request():
         return None
     pass
 
-"""
-直接方式
-"""
+# """
+# 直接方式
+# """
+# #
+# from . import normal
+
+# """
+# restful方式
+# """
+# # api句柄
+# api_ai = Api(blueprint_authority)
 #
-from . import normal
-
-"""
-restful方式
-"""
-# api句柄
-api_ai = Api(blueprint_authority)
-
-from project.app.api.restful import RestfulRes, RestfulCollRes
-api_ai.add_resource(RestfulRes, "/restful")
-api_ai.add_resource(RestfulCollRes, "/restfuls")
+# from project.app.api.restful import RestfulRes, RestfulCollRes
+# api_ai.add_resource(RestfulRes, "/restful")
+# api_ai.add_resource(RestfulCollRes, "/restfuls")
 
 

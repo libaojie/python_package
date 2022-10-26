@@ -165,11 +165,11 @@ reference = "douban"
 
 [[package]]
 name = "flask-sqlalchemy"
-version = "2.3.0"
-description = "Adds SQLAlchemy support to your Flask application"
+version = "2.5.1"
+description = "Adds SQLAlchemy support to your Flask application."
 category = "main"
 optional = false
-python-versions = "*"
+python-versions = ">= 2.7, != 3.0.*, != 3.1.*, != 3.2.*, != 3.3.*"
 
 [package.dependencies]
 Flask = ">=0.10"
@@ -549,7 +549,7 @@ reference = "douban"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "a27817004dbc0ca3ed69c4590634149dc85492f054cc0f0e2f725e9d797ba402"
+content-hash = "075df5eb69e978529ed5c68fcb7cec5f9e4ad07381e51153ef3927b3063e4d15"
 
 [metadata.files]
 aniso8601 = [
@@ -666,8 +666,8 @@ flask-restful = [
     {file = "Flask_RESTful-0.3.9-py2.py3-none-any.whl", hash = "sha256:4970c49b6488e46c520b325f54833374dc2b98e211f1b272bd4b0c516232afe2"},
 ]
 flask-sqlalchemy = [
-    {file = "Flask-SQLAlchemy-2.3.0.tar.gz", hash = "sha256:da19ff62e31f82825b5467811c76e2a1c60bba927e175fe091a6f739063dd829"},
-    {file = "Flask_SQLAlchemy-2.3.0-py2.py3-none-any.whl", hash = "sha256:5ecbc3b899ef4f23db756474f54d76b2892b0a5cd13e5e8f1e67c1d1ac244cfc"},
+    {file = "Flask-SQLAlchemy-2.5.1.tar.gz", hash = "sha256:2bda44b43e7cacb15d4e05ff3cc1f8bc97936cc464623424102bfc2c35e95912"},
+    {file = "Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl", hash = "sha256:f12c3d4cc5cc7fdcc148b9527ea05671718c3ea45d50c7e732cceb33f574b390"},
 ]
 gevent = [
     {file = "gevent-22.10.1-cp27-cp27m-win32.whl", hash = "sha256:702a51b8f21bad1976b0893f90ade466e8c27039b846b611ad2beb8c6e6ac701"},

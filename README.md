@@ -37,14 +37,11 @@
 
     
 ## 推荐环境
-
-    1、python == 3.7.4
-
-    1、python == 3.8.8
-    2、poetry == 1.0.5
+    python 3.8.8
+    poetry 1.2.0
 
     python -m pip list
-    python -m pip install poetry==1.0.5
+    python -m pip install poetry==1.2.0
 ###设置poetry路径
     poetry config --list
     1、

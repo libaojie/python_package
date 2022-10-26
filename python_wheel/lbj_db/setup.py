@@ -5,11 +5,11 @@ setup(
     name='lbj-db',
     version='2.0',
     packages=find_packages(),
-    setup_requires=['sqlalchemy'],
+    setup_requires=['sqlalchemy', 'pymysql', 'cx-oracle'],
     install_requires=[
-        "sqlalchemy==1.2.0",
-        "pymysql==0.8.0",
-        "cx-oracle==8.1.0"
+        "sqlalchemy>=1.4.39",
+        "pymysql>=0.8.0",
+        "cx-oracle>=8.1.0"
     ],
     description='数据库连接中间层',
     url='None',

@@ -136,14 +136,14 @@ def index():
     return 'security_center'
 
 
-@app.route('/health')
-def health():
-    """
-    心跳 对接springcloud
-    :return:
-    """
-    t = {'status': 'UP'}
-    return Response(json.dumps(t), mimetype='application/json')
+# @app.route('/health')
+# def health():
+#     """
+#     心跳 对接springcloud
+#     :return:
+#     """
+#     t = {'status': 'UP'}
+#     return Response(json.dumps(t), mimetype='application/json')
 
 
 @app.before_request

@@ -11,7 +11,7 @@ setup(
         "requests>=2.28.1",
         "flask>=2.0.3",
         "flask-restful>=0.3.9",
-        "flask-sqlalchemy>=2.3.0",
+        "flask-sqlalchemy>=2.5.1",
         "flask-cors>=3.0.4",
         "Werkzeug>=2.2.2",
     ],
