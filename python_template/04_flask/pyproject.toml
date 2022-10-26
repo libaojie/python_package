@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "python_04_flask_venv"
+version = "0.1.0"
+description = "python项目flask框架"
+authors = ["libaojie <libaojie@qq.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+lbj-common = {path = "../../python_wheel/lbj_common/dist/lbj_common-2.0-py3-none-any.whl"}
+lbj-db = {path = "../../python_wheel/lbj_db/dist/lbj_db-2.0-py3-none-any.whl"}
+lbj-flask= {path = "../../python_wheel/lbj_flask/dist/lbj_flask-2.0-py3-none-any.whl"}
+
+
+[tool.poetry.dev-dependencies]
+[[tool.poetry.source]]
+name = "douban"
+url = "https://pypi.doubanio.com/simple/"
+default = true
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
