@@ -9,6 +9,7 @@ python = "^3.8"
 lbj-common = {path = "../../python_wheel/lbj_common/dist/lbj_common-2.0-py3-none-any.whl"}
 lbj-db = {path = "../../python_wheel/lbj_db/dist/lbj_db-2.0-py3-none-any.whl"}
 lbj-flask= {path = "../../python_wheel/lbj_flask/dist/lbj_flask-2.0-py3-none-any.whl"}
+cx-freeze = "^6.12.0"
 
 
 [tool.poetry.dev-dependencies]
