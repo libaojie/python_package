@@ -6,7 +6,7 @@ setup(
     version='2.0',
     packages=find_packages(),
     install_requires=[
-        "setuptools==19.2.0",
+        "setuptools==49.2.1",
         "wheel==0.34.2"
     ],
     description='基础工具包',
