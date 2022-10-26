@@ -52,7 +52,7 @@ optional = false
 python-versions = ">=3.6.0"
 
 [package.extras]
-unicode_backport = ["unicodedata2"]
+unicode-backport = ["unicodedata2"]
 
 [package.source]
 type = "legacy"
@@ -126,7 +126,7 @@ reference = "douban"
 
 [[package]]
 name = "flask-cors"
-version = "3.0.4"
+version = "3.0.9"
 description = "A Flask extension adding a decorator for CORS support"
 category = "main"
 optional = false
@@ -391,7 +391,7 @@ urllib3 = ">=1.21.1,<1.27"
 
 [package.extras]
 socks = ["PySocks (>=1.5.6,!=1.5.7)"]
-use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
+use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [package.source]
 type = "legacy"
@@ -438,13 +438,13 @@ optional = false
 python-versions = "*"
 
 [package.extras]
-mssql_pymssql = ["pymssql"]
-mssql_pyodbc = ["pyodbc"]
+mssql-pymssql = ["pymssql"]
+mssql-pyodbc = ["pyodbc"]
 mysql = ["mysqlclient"]
 oracle = ["cx_oracle"]
 postgresql = ["psycopg2"]
-postgresql_pg8000 = ["pg8000"]
-postgresql_psycopg2cffi = ["psycopg2cffi"]
+postgresql-pg8000 = ["pg8000"]
+postgresql-psycopg2cffi = ["psycopg2cffi"]
 pymysql = ["pymysql"]
 
 [package.source]
@@ -549,7 +549,7 @@ reference = "douban"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "075df5eb69e978529ed5c68fcb7cec5f9e4ad07381e51153ef3927b3063e4d15"
+content-hash = "91ecbf283b9ef386eb52721e38587efe0901927f0fd9da4f12962e73aa58c7a0"
 
 [metadata.files]
 aniso8601 = [
@@ -658,8 +658,8 @@ flask = [
     {file = "Flask-2.0.3.tar.gz", hash = "sha256:e1120c228ca2f553b470df4a5fa927ab66258467526069981b3eb0a91902687d"},
 ]
 flask-cors = [
-    {file = "Flask-Cors-3.0.4.tar.gz", hash = "sha256:bec996f0603a0693c0ea63c8126e5f8e966bb679cf82e6104b254e9c7f3a7d08"},
-    {file = "Flask_Cors-3.0.4-py2.py3-none-any.whl", hash = "sha256:a1bb895b3e98b4325743149ebe0e3a0652537b8e37854f942bde7843f822f129"},
+    {file = "Flask-Cors-3.0.9.tar.gz", hash = "sha256:6bcfc100288c5d1bcb1dbb854babd59beee622ffd321e444b05f24d6d58466b8"},
+    {file = "Flask_Cors-3.0.9-py2.py3-none-any.whl", hash = "sha256:cee4480aaee421ed029eaa788f4049e3e26d15b5affb6a880dade6bafad38324"},
 ]
 flask-restful = [
     {file = "Flask-RESTful-0.3.9.tar.gz", hash = "sha256:ccec650b835d48192138c85329ae03735e6ced58e9b2d9c2146d6c84c06fa53e"},
