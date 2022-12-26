@@ -7,7 +7,7 @@ authors = ["libaojie <libaojie@qq.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 setuptools = "49.2.1"
-wheel = "0.34.2"
+wheel = "0.38.1"
 
 
 [tool.poetry.dev-dependencies]
